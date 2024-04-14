@@ -1,47 +1,42 @@
-    1  docker build .
-    2  docker images -a
-    3  docker tag 2e4bcda50566 letsmakesome/nodejsapp:1.0.0
-    4  docker push letsmakesome/nodejsapp:1.0.0
-    5  docker login -u letsmakesome
-    6  docker push letsmakesome/nodejsapp:1.0.0
-    7  minikube status
-    8  minikube profile list
-    9  minikube start
-   10  лгиусед сщташп сгккуте-сщтеуче
-   11  kubectl config current-context
-   12  alias k=kubectl
-   13  k version
-   14  k get all -A
-   15  k create deploy demoapp --image letsmakesome/nodejsapp:1.0.0
-   16  k get deploy -o wide
-   17  k get po
-   18  k get deploy
-   19  k get deploy --all-namespaces
-   20  k delete deployment demoapp -n default
-   21  k create deploy demoapp --image letsmakesome/nodejsapp:1.0.0
-   22  k get deploy
-   23  k get po
-   24  k get po -o wide
-   25  celar
-   26  clear
-   27  k get po -o wide
-   28  k proxy
-   29  minikube addons enable ingress
-   30  k proxy
-   31  k get services
-   32  k get pods -n ingress-nginx
-   33  k get deploy
-   34  k expose deployment demoaapp --type=NodePort --port 3000
-   35  k expose deployment demaapp --type=NodePort --port 3000
-   36  k expose deployment demoapp --type=NodePort --port 3000
-   37  k get services demoapp
-   38  minikube service demoapp --url
-   39  curl http://192.168.49.2:30432
-   40  ll
-   41  mkdir k8s
-   42  cd k8s
-   43  nano example-ingress.yaml
-   44  k apply -f example-ingress.yaml 
-   45  k get ingress
-   46  minikube ip
-   47  history > history.txt
+docker build .
+docker images -a
+docker tag 2e4bcda50566 letsmakesome/nodejsapp:1.0.0
+docker push letsmakesome/nodejsapp:1.0.0
+docker login -u letsmakesome
+docker push letsmakesome/nodejsapp:1.0.0
+minikube status
+minikube profile list
+minikube start
+kubectl config current-context
+alias k=kubectl
+k version
+k get all -A
+k create deploy demoapp --image letsmakesome/nodejsapp:1.0.0
+k get deploy -o wide
+k get po
+k get deploy
+k get deploy --all-namespaces
+k delete deployment demoapp -n default
+k create deploy demoapp --image letsmakesome/nodejsapp:1.0.0
+k get deploy
+k get po
+k get po -o wide
+clear
+k get po -o wide
+k proxy
+minikube addons enable ingress
+k proxy
+k get services
+k get pods -n ingress-nginx
+k get deploy
+k expose deployment demoapp --type=NodePort --port 3000
+k get services demoapp
+minikube service demoapp --url
+curl http://192.168.49.2:30432
+ll
+mkdir k8s
+cd k8s
+nano example-ingress.yaml
+k apply -f example-ingress.yaml 
+k get ingress
+minikube ip
